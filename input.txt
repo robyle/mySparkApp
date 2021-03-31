@@ -1,0 +1,11 @@
+I am Roby
+Mobius: C# 
+and F# language binding and extensions to Apache Spark, a pre-cursor project to .NET for Apache Spark from the same Microsoft group.
+PySpark: Python bindings for Apache Spark, one of the implementations .NET for Apache Spark derives inspiration from.
+sparkR: one of the implementations .NET for Apache Spark derives inspiration from.
+Apache Arrow: A cross-language development platform for in-memory data. This library provides .NET for Apache Spark with efficient ways to transfer column major data between the JVM and .NET CLR.
+Pyrolite - Java and .NET interface to Python's pickle and Pyro protocols. This library provides .NET for Apache Spark with efficient ways to transfer row major data between the JVM and .NET CLR.
+Databricks: Unified analytics platform. Many thanks to all the suggestions from them towards making .NET for Apache Spark run on Azure and AWS Databricks.
+.NET
+.NET
+.NET

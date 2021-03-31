@@ -1,0 +1,54 @@
+spark-submit \
+--class org.apache.spark.deploy.dotnet.DotnetRunner \
+--master local \
+~/dotnet.spark/src/scala/microsoft-spark-<version>/target/microsoft-spark-<version>.jar \
+./Microsoft.Spark.CSharp.Examples Sql.Streaming.StructuredNetworkWordCount localhost 9999
+
+
+spark-submit \
+--class org.apache.spark.deploy.dotnet.DotnetRunner \
+--master local \
+~/dotnet.spark/src/scala/microsoft-spark-2-4/target/microsoft-spark-2-4_2.11-1.1.0.jar \
+./Microsoft.Spark.CSharp.Examples Sql.Streaming.StructuredNetworkWordCount localhost 9999
+
+
+
+ D:\Projects\Github\spark\src\scala\microsoft-spark-2-4\target\microsoft-spark-2-4_2.11-1.1.0.jar
+ 
+ dotnet add package Microsoft.Spark
+ 
+ spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local ~/dotnet.spark/src/scala/microsoft-spark-2-4/target/microsoft-spark-2-4_2.11-1.1.0.jar dotnet MySparkApp.dll
+ 
+ 
+spark-submit.cmd `
+--conf "spark.port.maxRetries=1000"  `
+--class org.apache.spark.deploy.dotnet.DotnetRunner `
+--master local `
+D:\Projects\Github\spark\src\scala\microsoft-spark-2-4\target\microsoft-spark-2-4_2.11-1.1.0.jar `
+Microsoft.Spark.CSharp.Examples.exe Sql.Batch.Basic C:\bin\spark-2.4.1-bin-hadoop2.7\examples\src\main\resources\people.json
+
+.\spark-shell --conf "spark.ui.port=4315"
+
+spark-shell --conf "spark.port.maxRetries=1000"
+
+C:\bin\spark-2.4.1-bin-hadoop2.7\examples\src\main\resources\people.json
+
+添加：Work目录  添加:Examples 目录
+
+spark-submit `
+--conf "spark.port.maxRetries=1000"  `
+--class org.apache.spark.deploy.dotnet.DotnetRunner `
+--master local `
+D:\Projects\Github\spark\src\scala\microsoft-spark-2-4\target\microsoft-spark-2-4_2.11-1.1.0.jar `
+dotnet MySparkApp.dll input.txt
+
+
+
+Debugger
+
+spark-submit `
+--conf "spark.port.maxRetries=1000"  `
+--class org.apache.spark.deploy.dotnet.DotnetRunner `
+--master local `
+D:\Projects\Github\spark\src\scala\microsoft-spark-2-4\target\microsoft-spark-2-4_2.11-1.1.0.jar `
+debug

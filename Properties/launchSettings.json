@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "mySparkApp": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\Projects\\Demo\\mySparkApp\\bin\\Debug\\netcoreapp3.1\\input.txt"
+    }
+  }
+}
